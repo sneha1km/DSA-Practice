@@ -1,0 +1,20 @@
+
+public class FindMinimumNumber {
+	static int findMinNumber(int [] array) {
+		int min=array[0];
+		for(int i=1;i<array.length;i++) {
+			if(array[i]<min) {
+				min=array[i];
+			}
+		}
+		return min;
+	}
+
+	public static void main(String[] args) {
+	  int arr[]= {8,3,0,-2,90,11,-5};
+	  
+	  System.out.println(findMinNumber(arr));
+
+	}
+
+}

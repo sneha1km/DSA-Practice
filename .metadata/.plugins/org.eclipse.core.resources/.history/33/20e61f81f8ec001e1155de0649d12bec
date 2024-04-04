@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class LinearSearchString {
+   static boolean Search(char n, String string) {
+	   if(string.length()==0) {
+		   return false;
+	   }
+	   for(int i=0;i<string.length();i++) {
+		   if(string.charAt(i)==n) {
+			   return true;
+		   }
+	   }
+	   return false;
+   }
+
+	public static void main(String[] args) {
+		System.out.print("Enter the charchter to be searched ");
+		String str="hello world";
+		Scanner cs =new Scanner(System.in);
+		
+		char n=cs.next().charAt(0);
+		System.out.println(Search(n, str));
+
+
+	}
+
+}
